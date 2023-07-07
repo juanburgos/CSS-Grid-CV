@@ -65,7 +65,7 @@ ul.nav li a.active {
   grid-template-rows: auto;
   grid-template-areas: "profile-pic headline";
   background-color: #4f709c;
-  margin-top: 36.7px;
+  margin-top: 36.2px;
 }
 
 #work {
@@ -104,7 +104,7 @@ footer {
   padding: 10px;
 }
 
-@media screen and (max-width: 763px) {
+@media screen and (max-width: 450px) {
   ul.nav {
     display: flex;
     flex-direction: row-reverse;
@@ -114,19 +114,19 @@ footer {
   ul.nav li {
     float: none;
   }
-}
-
-@media screen and (max-width: 320px) {
-  .heading {
-    margin-top: 89.2px;
-  }
-
-  html {
-    scroll-padding-top: 105.2px; /* height of sticky header */
-  }
 
   #certs {
     display: flex;
     flex-direction: column;
+  }
+
+  .heading {
+    margin-top: 88.2px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    scroll-padding-top: 105.2px; /* height of sticky header */
   }
 }
