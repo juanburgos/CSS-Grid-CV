@@ -1,16 +1,21 @@
+html {
+  scroll-padding-top: 36.7px; /* height of sticky header */
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 ul.nav {
   list-style-type: none;
   margin: 0;
-  padding: 10px;
+  padding: 0;
   overflow: hidden;
   background-color: #333;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
 }
 
 ul.nav li {
@@ -26,18 +31,11 @@ ul.nav li a {
 }
 
 ul.nav li a:hover {
-  border: 1px solid #f5efe7;
-  border-radius: 3%;
+  color: #4f709c;
 }
 
 ul.nav li a.active {
-  background-color: #213555;
-}
-
-@media screen and (max-width: 600px) {
-  ul.nav li {
-    float: none;
-  }
+  background-color: #4f709c;
 }
 
 .divider {
@@ -67,6 +65,7 @@ ul.nav li a.active {
   grid-template-rows: auto;
   grid-template-areas: "profile-pic headline";
   background-color: #4f709c;
+  margin-top: 36.7px;
 }
 
 #work {
@@ -103,4 +102,31 @@ ul.nav li a.active {
 footer {
   background-color: #4f709c;
   padding: 10px;
+}
+
+@media screen and (max-width: 763px) {
+  ul.nav {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+  }
+
+  ul.nav li {
+    float: none;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .heading {
+    margin-top: 89.2px;
+  }
+
+  html {
+    scroll-padding-top: 105.2px; /* height of sticky header */
+  }
+
+  #certs {
+    display: flex;
+    flex-direction: column;
+  }
 }
