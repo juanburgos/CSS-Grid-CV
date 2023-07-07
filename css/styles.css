@@ -104,7 +104,11 @@ footer {
   padding: 10px;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 504px) {
+  html {
+    scroll-padding-top: 105.2px; /* height of sticky header */
+  }
+
   ul.nav {
     display: flex;
     flex-direction: row-reverse;
@@ -125,8 +129,12 @@ footer {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 301px) {
   html {
-    scroll-padding-top: 105.2px; /* height of sticky header */
+    scroll-padding-top: 157.8px; /* height of sticky header */
+  }
+
+  .heading {
+    margin-top: 142.2px;
   }
 }
